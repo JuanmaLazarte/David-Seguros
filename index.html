@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Asesoramiento en seguros en Argentina. Automotor, hogar, vida, comercio y más. Atención personalizada." />
+  <title>David Asesores de Seguros</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="whatsapp-wrapper">
+    <div class="whatsapp-hint" id="whatsappHint" aria-hidden="true">
+      <span aria-hidden="true">💬</span>
+      <p>¿Necesitás ayuda para elegir tu seguro?</p>
+    </div>
+
+    <a href="https://wa.me/5493875097617?text=Hola%2C%20quiero%20asesoramiento%20para%20cotizar%20un%20seguro." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Hablar por WhatsApp">
+      <span aria-hidden="true">💬</span>
+    </a>
+  </div>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">David <span>Asesores de Seguros</span></div>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#seguros">Seguros</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="hero-badge">Asesoramiento cercano y cobertura confiable</span>
+        <h1>Protegé lo que más te importa, con asesoramiento real</h1>
+        <p>
+          Te ayudamos a elegir la cobertura adecuada y te acompañamos cuando más lo necesitás.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn hero-primary" id="whatsappBtn">Hablar con un asesor ahora</button>
+          <a href="#contacto" class="btn hero-secondary">Cotizar online</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="50" data-prefix="+">+50</h2>
+        <p>años de experiencia</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="10000" data-suffix="+">10.000+</h2>
+        <p>asegurados</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 class="stat-number" data-target="100" data-suffix="%">100%</h2>
+        <p>atención personalizada</p>
+      </div>
+    </section>
+
+    <section class="section" id="seguros">
+      <div class="section-title">
+        <h2>Seguros para cada necesidad</h2>
+        <p>Te ayudamos a encontrar la cobertura adecuada para vos, tu familia, tu patrimonio o tu actividad.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M5 14l1.5-4.5A2 2 0 0 1 8.4 8h7.2a2 2 0 0 1 1.9 1.5L19 14" />
+              <path d="M4 14h16v3a1 1 0 0 1-1 1h-1" />
+              <path d="M6 18H5a1 1 0 0 1-1-1v-3" />
+              <circle cx="7.5" cy="17.5" r="1.5" />
+              <circle cx="16.5" cy="17.5" r="1.5" />
+            </svg>
+          </div>
+          <h3>Automotor</h3>
+          <p>Autos, motos, camionetas y flotas.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M4 11.5L12 5l8 6.5" />
+              <path d="M6.5 10.5V19h11v-8.5" />
+              <path d="M10 19v-4h4v4" />
+            </svg>
+          </div>
+          <h3>Hogar</h3>
+          <p>Protección para tu casa y tus bienes.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 20s-6-3.8-6-9a3.5 3.5 0 0 1 6-2.4A3.5 3.5 0 0 1 18 11c0 5.2-6 9-6 9Z" />
+            </svg>
+          </div>
+          <h3>Vida</h3>
+          <p>Cobertura para vos y los tuyos.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 4l7 3v5c0 4.5-3 7-7 8-4-1-7-3.5-7-8V7l7-3Z" />
+              <path d="M9.5 12.5l1.5 1.5 3.5-4" />
+            </svg>
+          </div>
+          <h3>Accidentes</h3>
+          <p>Protección frente a imprevistos para trabajadores y personas independientes.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M6 20V8" />
+              <path d="M10 20V4" />
+              <path d="M14 20v-6" />
+              <path d="M18 20v-9" />
+              <path d="M4 20h16" />
+            </svg>
+          </div>
+          <h3>Comercio</h3>
+          <p>Coberturas pensadas para locales, mercadería y actividad comercial.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M3 16.5h18" />
+              <path d="M5 18.5h4" />
+              <path d="M15 18.5h4" />
+              <path d="M4 15l7-6 4 3 5-4" />
+            </svg>
+          </div>
+          <h3>Viajero</h3>
+          <p>Asistencia y cobertura para viajar con mayor tranquilidad.</p>
+        </div>
+
+        <div class="card extra-card">
+          <h3>Caución</h3>
+          <p>Respaldo para contratos, alquileres y obligaciones comerciales.</p>
+        </div>
+
+        <div class="card extra-card">
+          <h3>Integral de Consorcio</h3>
+          <p>Soluciones para edificios, espacios comunes y administraciones.</p>
+        </div>
+
+        <div class="card extra-card">
+          <h3>Embarcación de Placer</h3>
+          <p>Protección para navegación recreativa y embarcaciones particulares.</p>
+        </div>
+
+        <div class="card extra-card">
+          <h3>Incendio</h3>
+          <p>Cobertura ante daños materiales y pérdidas por fuego.</p>
+        </div>
+
+        <div class="card extra-card">
+          <h3>Responsabilidad Civil</h3>
+          <p>Respaldo ante reclamos de terceros en distintos ámbitos de actividad.</p>
+        </div>
+
+        <div class="card extra-card">
+          <h3>Todo Riesgo Operativo</h3>
+          <p>Coberturas amplias para operaciones, bienes y riesgos técnicos.</p>
+        </div>
+      </div>
+
+      <div class="cards-action">
+        <button class="btn outline" id="toggleCoveragesBtn" type="button" aria-expanded="false">
+          Ver más coberturas
+        </button>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="about-layout">
+        <div class="about-content">
+          <h2>Asesorar no es solo vender, es acompañar</h2>
+          <p>
+            Somos una empresa familiar con más de 50 años acompañando a personas, familias y empresas.
+          </p>
+          <p class="about-subtext">
+            Creemos en hablar claro, estar presentes y ayudarte a elegir una cobertura que tenga sentido para tu realidad.
+          </p>
+
+          <ul>
+            <li>Atención humana y cercana</li>
+            <li>Comparación entre distintas aseguradoras</li>
+            <li>Acompañamiento en caso de siniestro</li>
+            <li>Seguimiento personalizado de cada póliza</li>
+          </ul>
+        </div>
+
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-visual-card">
+            <span class="about-visual-badge">Atención personalizada</span>
+            <div class="about-visual-shield">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M12 3.5l7 3v5.2c0 4.8-3 7.8-7 8.8-4-1-7-4-7-8.8V6.5l7-3Z" />
+                <path d="M9.5 12.4l1.7 1.7 3.7-4.1" />
+              </svg>
+            </div>
+            <div class="about-mini-grid">
+              <div class="about-mini-item">
+                <strong>Atención directa</strong>
+                <span>sin intermediarios innecesarios</span>
+              </div>
+              <div class="about-mini-item">
+                <strong>Opciones claras</strong>
+                <span>para comparar mejor</span>
+              </div>
+              <div class="about-mini-item">
+                <strong>Soporte real</strong>
+                <span>antes y después</span>
+              </div>
+              <div class="about-mini-item">
+                <strong>WhatsApp</strong>
+                <span>respuesta directa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="section-title">
+        <h2>Por qué elegirnos</h2>
+        <p>Queremos que asegurarte sea más claro, simple y humano.</p>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card">
+          <div class="section-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" />
+              <path d="M5 20a7 7 0 0 1 14 0" />
+            </svg>
+          </div>
+          <h3>Asesoramiento personalizado</h3>
+          <p>Te ayudamos a elegir una cobertura acorde a lo que realmente necesitás.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="section-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M5 7h6" />
+              <path d="M5 12h10" />
+              <path d="M5 17h7" />
+              <path d="M17 7h2" />
+              <path d="M19 12h-2" />
+              <path d="M18 17h1" />
+            </svg>
+          </div>
+          <h3>Opciones entre distintas compañías</h3>
+          <p>Comparamos alternativas para que puedas decidir con más claridad.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="section-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 3.5l7 3v5.2c0 4.8-3 7.8-7 8.8-4-1-7-4-7-8.8V6.5l7-3Z" />
+              <path d="M9.5 12.4l1.7 1.7 3.7-4.1" />
+            </svg>
+          </div>
+          <h3>Acompañamiento en siniestros</h3>
+          <p>Si surge un problema, te orientamos y seguimos tu caso.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="section-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 5v7l4 2" />
+              <circle cx="12" cy="12" r="8" />
+            </svg>
+          </div>
+          <h3>Experiencia y cercanía</h3>
+          <p>Combinamos trayectoria con atención directa y cercana.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="section-title">
+        <h2>Preguntas frecuentes</h2>
+        <p>Respuestas rápidas a consultas habituales.</p>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <div class="faq-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M5 19l1.6-3.2A7 7 0 1 1 12 19H5Z" />
+              <path d="M10 10a2 2 0 1 1 3.1 1.7c-.8.5-1.1.9-1.1 1.8" />
+              <path d="M12 16h.01" />
+            </svg>
+          </div>
+          <div class="faq-copy">
+            <h3>¿Puedo pedir una cotización por WhatsApp?</h3>
+            <p>Sí. Podés escribirnos y contarnos qué seguro necesitás.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <div class="faq-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M4 7h16" />
+              <path d="M4 12h10" />
+              <path d="M4 17h13" />
+            </svg>
+          </div>
+          <div class="faq-copy">
+            <h3>¿Trabajan con distintas aseguradoras?</h3>
+            <p>Sí. Eso nos permite comparar opciones según tu caso.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <div class="faq-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 3.5l7 3v5.2c0 4.8-3 7.8-7 8.8-4-1-7-4-7-8.8V6.5l7-3Z" />
+            </svg>
+          </div>
+          <div class="faq-copy">
+            <h3>¿Qué hago si tuve un siniestro?</h3>
+            <p>Escribinos cuanto antes y te indicamos cómo seguir.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <div class="faq-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M6 20V8" />
+              <path d="M10 20V4" />
+              <path d="M14 20v-6" />
+              <path d="M18 20v-9" />
+              <path d="M4 20h16" />
+            </svg>
+          </div>
+          <div class="faq-copy">
+            <h3>¿Solo trabajan seguros personales?</h3>
+            <p>No. También ofrecemos coberturas para actividades y riesgos específicos.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <div class="faq-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z" />
+              <circle cx="12" cy="10" r="2.2" />
+            </svg>
+          </div>
+          <div class="faq-copy">
+            <h3>¿Dónde están ubicados?</h3>
+            <p>Estamos en Gregorio Marañón 66, Salta Capital. Con atención digital dentro y fuera del país.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="companies">
+      <h2>Trabajamos con aseguradoras de primer nivel</h2>
+      <div class="company-list">
+        <span>Allianz</span>
+        <span>Rivadavia</span>
+        <span>Mercantil Andina</span>
+        <span>Federación Patronal</span>
+        <span>Chubb</span>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="section-title">
+        <h2>Cómo trabajamos</h2>
+        <p>Un proceso simple, claro y acompañado.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-card">
+          <span class="process-number">1</span>
+          <h3>Escuchamos tu necesidad</h3>
+          <p>Nos contás qué necesitás y te orientamos desde el comienzo.</p>
+        </article>
+
+        <article class="process-card">
+          <span class="process-number">2</span>
+          <h3>Evaluamos opciones</h3>
+          <p>Revisamos alternativas para que compares con claridad.</p>
+        </article>
+
+        <article class="process-card">
+          <span class="process-number">3</span>
+          <h3>Te acompañamos después</h3>
+          <p>Seguimos cerca para consultas, cambios y siniestros.</p>
+        </article>
+      </div>
+    </section>
+
+      <section class="claims">
+        <div class="claims-content">
+          <h2>¿Tuviste un siniestro?</h2>
+          <p class="claims-lead">Si pasa algo, te guiamos desde el primer momento para que sepas cómo seguir.</p>
+
+          <div class="claims-steps">
+            <article class="claim-step">
+              <span class="claim-step-number">1</span>
+              <h3>Te indicamos qué hacer</h3>
+              <p>Te orientamos en el momento para que actúes con calma.</p>
+            </article>
+
+            <article class="claim-step">
+              <span class="claim-step-number">2</span>
+              <h3>Te ayudamos con la gestión</h3>
+              <p>Te acompañamos con la denuncia y el contacto con la aseguradora.</p>
+            </article>
+
+            <article class="claim-step">
+              <span class="claim-step-number">3</span>
+              <h3>Seguimos tu caso</h3>
+              <p>Hacemos seguimiento para que el caso avance.</p>
+            </article>
+          </div>
+
+          <div class="claims-support">
+            <h3>En un momento así, hablar con alguien que te responda hace la diferencia.</h3>
+            <p>Si necesitás ayuda, escribinos y te orientamos.</p>
+            <a href="https://wa.me/5493875097617?text=Hola%2C%20tuve%20un%20siniestro%20y%20necesito%20ayuda." class="btn primary" target="_blank" rel="noopener noreferrer">Necesito ayuda ahora</a>
+          </div>
+        </div>
+      </section>
+
+    <section class="contact" id="contacto">
+      <h2>¿Buscás asesoramiento real?</h2>
+      <p>Estamos para ayudarte a elegir el seguro que mejor se adapte a vos.</p>
+
+      <div class="contact-channels">
+        <a href="https://wa.me/5493875097617?text=Hola%2C%20quiero%20asesoramiento%20para%20cotizar%20un%20seguro." class="contact-channel" target="_blank" rel="noopener noreferrer">
+          <span class="contact-channel-icon" aria-hidden="true">💬</span>
+          <span class="contact-channel-copy">
+            <strong>WhatsApp directo</strong>
+            <span>+54 9 387 509-7617</span>
+          </span>
+        </a>
+
+        <a href="tel:+5493875097617" class="contact-channel">
+          <span class="contact-channel-icon" aria-hidden="true">📞</span>
+          <span class="contact-channel-copy">
+            <strong>Teléfono</strong>
+            <span>+54 9 387 509-7617</span>
+          </span>
+        </a>
+
+        <a href="mailto:davidseguros001@gmail.com" class="contact-channel">
+          <span class="contact-channel-icon" aria-hidden="true">✉️</span>
+          <span class="contact-channel-copy">
+            <strong>Mail</strong>
+            <span>davidseguros001@gmail.com</span>
+          </span>
+        </a>
+
+        <div class="contact-channel contact-channel-static">
+          <span class="contact-channel-icon" aria-hidden="true">📍</span>
+          <span class="contact-channel-copy">
+            <strong>Ciudad</strong>
+            <span>Salta Capital, atención presencial y digital</span>
+          </span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="nombre">Nombre y apellido</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre y apellido" required>
+        <fieldset class="contact-choice">
+          <legend>Tipo de cliente</legend>
+          <label class="choice-option" for="cliente-particular">
+            <input id="cliente-particular" type="radio" name="tipoCliente" value="Particular" checked>
+            <span>Particular</span>
+          </label>
+          <label class="choice-option" for="cliente-empresa">
+            <input id="cliente-empresa" type="radio" name="tipoCliente" value="Empresa">
+            <span>Empresa</span>
+          </label>
+        </fieldset>
+        <label for="seguro">Tipo de seguro</label>
+        <select id="seguro" name="seguro" required>
+          <option value="">Tipo de seguro</option>
+          <option>Automotor</option>
+          <option>Hogar</option>
+          <option>Vida</option>
+          <option>Caución</option>
+          <option>Accidentes Personales</option>
+          <option>Integral de Comercio</option>
+          <option>Integral de Consorcio</option>
+          <option>Seguro de Viajero</option>
+          <option>Embarcación de Placer</option>
+          <option>Incendio</option>
+          <option>Responsabilidad Civil</option>
+          <option>Todo Riesgo Operativo</option>
+
+        </select>
+        <label for="mensaje">Contanos que necesitas</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Contanos que necesitas"></textarea>
+        <button type="submit" class="btn primary">Enviar consulta</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-container">
+  
+      <!-- Marca -->
+      <div class="footer-col">
+        <h3>David Seguros</h3>
+        <p>
+          Más de 50 años brindando asesoramiento en seguros con atención personalizada.
+        </p>
+      </div>
+  
+      <!-- Navegación -->
+      <div class="footer-col">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#seguros">Seguros</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contacto -->
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>📍 Gregorio Marañón 66 , Salta</p>
+        <p>📞 +54 9 3875097617</p>
+        <p>📧 davidseguros001@gmail.com</p>
+      </div>
+  
+      <!-- CTA -->
+      <div class="footer-col">
+        <h4>¿Necesitás ayuda?</h4>
+        <p>Estamos para asesorarte.</p>
+        <a href="https://wa.me/5493875097617?text=Hola%2C%20quiero%20asesoramiento%20para%20cotizar%20un%20seguro." target="_blank" rel="noopener noreferrer" class="footer-btn">
+          Hablar por WhatsApp
+        </a>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2026 David Asesores de Seguros. Todos los derechos reservados.</p>
+    </div>
+  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+  
+  
