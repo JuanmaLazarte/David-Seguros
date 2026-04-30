@@ -1030,6 +1030,11 @@ body {
     height: 54px;
   }
 
+  .company-logo-smg-art {
+    max-width: 156px;
+    height: 56px;
+  }
+
   .company-card-featured img {
     max-width: 150px;
     height: 54px;
@@ -1394,6 +1399,11 @@ body {
     .company-logo-smg {
       max-width: 128px;
       height: 46px;
+    }
+
+    .company-logo-smg-art {
+      max-width: 134px;
+      height: 48px;
     }
 
     .company-card-featured {
