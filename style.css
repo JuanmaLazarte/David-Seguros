@@ -72,7 +72,12 @@ body {
   .brand-logo {
     width: 48px;
     height: 48px;
+    min-width: 48px;
+    max-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
     object-fit: contain;
+    flex-shrink: 0;
     display: block;
   }
 
@@ -852,13 +857,62 @@ body {
     transform: rotate(-1.4deg);
   }
 
-  .history-photo img {
+  .history-photo img,
+  .history-photo-placeholder {
     width: 100%;
     aspect-ratio: 3 / 4;
-    object-fit: cover;
     display: block;
     border-radius: 12px;
+  }
+
+  .history-photo img {
+    object-fit: cover;
     filter: grayscale(1) contrast(1.08);
+  }
+
+  .history-photo-placeholder {
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(180deg, rgba(234, 238, 244, 0.95) 0%, rgba(212, 218, 228, 0.98) 100%);
+    border: 1px solid rgba(77, 91, 109, 0.16);
+  }
+
+  .history-photo-placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.18) 0,
+        rgba(255, 255, 255, 0.18) 2px,
+        transparent 2px,
+        transparent 10px
+      );
+    mix-blend-mode: soft-light;
+  }
+
+  .history-photo-placeholder::after {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(77, 91, 109, 0.18);
+    border-radius: 8px;
+  }
+
+  .history-photo-placeholder span {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 18px;
+    z-index: 1;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #516072;
   }
 
   .history-photo figcaption {
@@ -1328,6 +1382,10 @@ body {
     .brand-logo {
       width: 38px;
       height: 38px;
+      min-width: 38px;
+      max-width: 38px;
+      min-height: 38px;
+      max-height: 38px;
     }
 
     .brand-main {
