@@ -929,6 +929,83 @@ body {
     margin-top: 28px;
   }
 
+  .team {
+    padding: 76px 25px 84px;
+    background: linear-gradient(180deg, #f6f9fd 0%, #ffffff 100%);
+  }
+
+  .team-grid {
+    max-width: 980px;
+    margin: 34px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .team-card {
+    padding: 32px 28px;
+    text-align: center;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fbfe 100%);
+    border: 1px solid rgba(36, 87, 161, 0.08);
+    box-shadow: 0 16px 34px rgba(18, 43, 77, 0.08);
+  }
+
+  .team-photo-wrap {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(18, 43, 77, 0.14);
+  }
+
+  .team-photo-fallback,
+  .team-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .team-photo-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      radial-gradient(circle at top left, rgba(255, 255, 255, 0.38), transparent 32%),
+      linear-gradient(135deg, #2457a1 0%, #1b3f73 100%);
+    color: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .team-photo-fallback span {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+  }
+
+  .team-photo {
+    object-fit: cover;
+    display: block;
+  }
+
+  .team-card h3 {
+    font-size: 25px;
+    color: #1b3f73;
+    margin-bottom: 12px;
+  }
+
+  .team-card p {
+    max-width: 320px;
+    margin: 0 auto;
+    color: #516072;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
   .section-icon {
     width: 46px;
     height: 46px;
@@ -1319,6 +1396,10 @@ body {
       grid-template-columns: 1fr;
     }
 
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+
     .history-photos {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1440,6 +1521,10 @@ body {
       padding: 78px 18px;
     }
 
+    .team {
+      padding: 70px 18px 78px;
+    }
+
     .history-head h2 {
       font-size: 31px;
     }
@@ -1484,6 +1569,29 @@ body {
     }
 
     .history-event-copy p {
+      font-size: 15px;
+    }
+
+    .team-card {
+      padding: 28px 22px;
+      border-radius: 24px;
+    }
+
+    .team-photo-wrap {
+      width: 116px;
+      height: 116px;
+      margin-bottom: 18px;
+    }
+
+    .team-photo-fallback span {
+      font-size: 31px;
+    }
+
+    .team-card h3 {
+      font-size: 22px;
+    }
+
+    .team-card p {
       font-size: 15px;
     }
 

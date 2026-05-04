@@ -92,7 +92,7 @@ const animateStat = (element) => {
 };
 
 const animatedElements = document.querySelectorAll(
-  ".stat-card, .card, .about-content, .about-visual-card, .history-card, .why-card, .faq-item, .company-card, .process-card, .contact-form, .claims-content, .testimonial-card, .cta-final-content"
+  ".stat-card, .card, .about-content, .about-visual-card, .history-card, .team-card, .why-card, .faq-item, .company-card, .process-card, .contact-form, .claims-content, .testimonial-card, .cta-final-content"
 );
 
 const observer = new IntersectionObserver((entries) => {
